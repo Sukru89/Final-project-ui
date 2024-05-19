@@ -16,7 +16,7 @@ function Header() {
     <>
       <Navbar bg="dark" data-bs-theme="dark">
         <Container>
-          <Navbar.Brand href="#home">Talk & Learn</Navbar.Brand>
+          <Navbar.Brand href="/">Talk & Learn</Navbar.Brand>
           <Nav className="me-auto">
             {!isAuthenticated ? (
               <Nav.Link href="/">Home</Nav.Link>
@@ -25,7 +25,7 @@ function Header() {
             )}
             <Nav.Link href="/community">Community</Nav.Link>
             <Nav.Link href="/about">About</Nav.Link>
-            <Nav.Link href="/contact">Contact</Nav.Link>
+            
             {isAuthenticated && <Nav.Link href="/profile">Profile</Nav.Link>}
           </Nav>
           <Nav>

@@ -5,6 +5,8 @@ import { useAuth0 } from "@auth0/auth0-react";
 import { AuthenticationGuard } from "./authenticationGuard";
 import { Profile } from "./pages/profile";
 import About from "./pages/about";
+import Community from "./pages/community";
+
 import Loading from "./Component/Loading";
 function App() {
   const { isLoading, error } = useAuth0();
@@ -24,6 +26,8 @@ function App() {
         element={<AuthenticationGuard component={Dashboard} />}
       />
       <Route path="/about" element={<About />} />
+      <Route path="/community" element={<Community />} />
+      
       <Route
         path="/profile"
         element={<AuthenticationGuard component={Profile} />}
